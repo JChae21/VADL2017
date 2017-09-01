@@ -1,0 +1,17 @@
+\section{Background}
+\label{sec:background}
+
+In this work, we focus on classification of clinical pathology reports.
+Clinical pathology reports contains highly valuable information.
+However, many experts have manually classified the huge volume of pathology reports and extracted information from the reports.
+Also, the reports are usually unstructured and have highly varied formats because they are generated from hundreds of different medical facilities and providers.
+
+Recently, Deep Learning (DL) based approaches in Natural Language Processing (NLP) have been applied for analysis of pathology reports and health records~\cite{yoon2016multi,miotto2016deep,qiu2017deep}.
+Yoon et al.~\cite{yoon2016multi} proposed a multi-task learning model to extract important keywords from cancer pathology reports.
+Moitto et al.~\cite{miotto2016deep} presented clinical predictive model using a unsupervised DL to derive patient representations that improve clinical prediction and decision system.
+Recurrent Neural Networks (RNNs) have achieved a great performance in NLP tasks.
+Yang et al.~\cite{yang2016hierarchical} developed a Hierarchical Attention Network (HAN) which is based on RNNs.
+They designed the networks to capture a hierarchical structure of documents (words form sentences, sentences form a document).
+HAN contains two levels of attention mechanisms to extract important words and sentences in a document.
+% HAN utilize a softmax function for document classification.
+In this work we use a set of model snapshot data resulted from the hierarchical attention layers and the final softmax output layer in HAN.

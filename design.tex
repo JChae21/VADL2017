@@ -1,0 +1,35 @@
+
+
+\section{Design Requirements}
+\label{sec:design}
+
+Our hypothesis is that the understanding of classification results can be effective to improve a neural network model.
+In the real-world, the application domain for classification can be very specific, for example, medical records, CT scan images, scientific images.
+In most cases, however, neural network developers would be not experts in a specific application domain.
+If the model developers have no background knowledge about the data they deal with and even they cannot expect any classification outcomes, starting with the understanding of data and classification outputs using our visualization tool should help them improve their network model for a specific classification task.
+Through this preceding step, they can more clearly understand the inner working and the learned features of their neural networks than without the step.
+
+We discussed visual design requirements for understanding classification with deep learning experts many times.
+We realized that they need not only basic visualizations for classification, but also specific requirements for their DNN models.
+The basic visual design needs to support the following requirements: \textit{exploration of the classifications}, \textit{a summary of each class}, and \textit{a detail view of each sample}.
+In addition to these basic requirements, we identified the following specific visualization requirements for supporting the aspects of DNNs.
+\begin{itemize}
+\item \textbf{R1: Showing training result changes as a training progressed.}
+Visualization needs to allows experimenters to monitor the accuracy and outcome of a network model during its training process.
+This allows to find a best performance point or stop the network from over-fitting~\cite{yeager2016effective}.
+Also, the experts need to identify the misclassified or ambiguously classified samples.
+\item \textbf{R2: Examining classification probability distributions.}
+Neural networks usually produce score distributions over all classes.
+The class with the highest score is selected as the predicted class.
+It is important to visualize the score distribution.
+For example, they need to see the second and third highest probability of classification of a misclassified or ambiguous data set to find possible solutions and refine their network model.
+\item \textbf{R3: Revealing the features of data learned by neural networks.}
+The experts want to view the learned features of each training sample.
+They examine the features to discover the issues of their network model.
+For example, they can recognize noise in training data that highly affects the networks and then handle the noise to refine their model.
+\end{itemize}
+
+
+
+
+
